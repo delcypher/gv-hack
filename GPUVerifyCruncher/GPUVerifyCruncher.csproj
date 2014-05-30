@@ -55,39 +55,37 @@
       <Project>{5E7E9AF7-4166-4082-B88B-F7766023D877}</Project>
       <Name>GPUVerifyLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\VCGeneration\VCGeneration.csproj">
+      <Project>{E1F10180-C7B9-4147-B51F-FA1B701966DC}</Project>
+      <Name>VCGeneration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\Basetypes\Basetypes.csproj">
+      <Project>{43DFAD18-3E35-4558-9BE2-CAFF6B5BA8A0}</Project>
+      <Name>Basetypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\Graph\Graph.csproj">
+      <Project>{69A2B0B8-BCAC-4101-AE7A-556FCC58C06E}</Project>
+      <Name>Graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\Houdini\Houdini.csproj">
+      <Project>{CF41E903-78EB-43BA-A355-E5FEB5ECECD4}</Project>
+      <Name>Houdini</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\Core\Core.csproj">
+      <Project>{B230A69C-C466-4065-B9C1-84D80E76D802}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\CodeContractsExtender\CodeContractsExtender.csproj">
+      <Project>{ACCC0156-0921-43ED-8F67-AD8BDC8CDE31}</Project>
+      <Name>CodeContractsExtender</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\boogie\Source\ParserHelper\ParserHelper.csproj">
+      <Project>{FCD3AC7F-9DFD-46C8-AB1E-09F0B0F16DC5}</Project>
+      <Name>ParserHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Basetypes">
-      <HintPath>..\BoogieBinaries\Basetypes.dll</HintPath>
-    </Reference>
-    <Reference Include="CodeContractsExtender">
-      <HintPath>..\BoogieBinaries\CodeContractsExtender.dll</HintPath>
-    </Reference>
-    <Reference Include="Core">
-      <HintPath>..\BoogieBinaries\Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Houdini">
-      <HintPath>..\BoogieBinaries\Houdini.dll</HintPath>
-    </Reference>
-    <Reference Include="Model">
-      <HintPath>..\BoogieBinaries\Model.dll</HintPath>
-    </Reference>
-    <Reference Include="ParserHelper">
-      <HintPath>..\BoogieBinaries\ParserHelper.dll</HintPath>
-    </Reference>
-    <Reference Include="VCGeneration">
-      <HintPath>..\BoogieBinaries\VCGeneration.dll</HintPath>
-    </Reference>
-    <Reference Include="Provers.SMTLib">
-      <HintPath>..\BoogieBinaries\Provers.SMTLib.dll</HintPath>
-    </Reference>
-    <Reference Include="AbsInt">
-      <HintPath>..\BoogieBinaries\AbsInt.dll</HintPath>
-    </Reference>
-    <Reference Include="Graph">
-      <HintPath>..\BoogieBinaries\Graph.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <Target Name="Clean">
     <RemoveDir Directories="$(ProjectDir)\bin" />
